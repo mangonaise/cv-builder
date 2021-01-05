@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import './App.css'
-import './components/SectionHeading';
 import SectionHeading from './components/SectionHeading';
 import CvDetailedItem from './components/CvDetailedItem';
 import CvSimpleItem from './components/CvSimpleItem';
