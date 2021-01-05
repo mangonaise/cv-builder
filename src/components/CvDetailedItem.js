@@ -57,7 +57,7 @@ const CvItem = (props) => {
               type="text" 
               value={tempYearStart} 
               onChange={event => editField(event, setTempYearStart)}
-              style={{marginLeft: '4px'}}
+              style={{marginLeft: '8px'}}
             />
             <span> - </span>
               <input 

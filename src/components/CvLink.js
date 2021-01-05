@@ -39,7 +39,7 @@ const CvLink = (props) => {
         type="text" 
         value={tempDestination} 
         onChange={event => setTempDestination(event.target.value)}
-        style={{marginLeft: '4px'}}
+        style={{marginLeft: '8px'}}
       />
       <button className="done-editing-button" onClick={submitLink}>Done</button>
       <button className="remove-item-button" onClick={props.onDelete}>Remove</button>
