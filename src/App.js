@@ -82,10 +82,10 @@ function App() {
         <div className="flex-space-between"> 
           <div style={{pointerEvents: isPreviewing ? 'none' : 'auto'}}>
             <CvSimpleItem 
-            titlePlaceholder="Name"
-            titleFallback="Your name here"
-            title={userName} 
-            onEdit={newData => setUserName(newData)}
+              titlePlaceholder="Name"
+              titleFallback="Your name here"
+              title={userName} 
+              onEdit={newData => setUserName(newData)}
             />
             <CvSimpleItem 
               titlePlaceholder="Phone number"
