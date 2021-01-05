@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+
+:root {
+  --button-display: block;
+  --background-color: rgb(245, 245, 245);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: var(--background-color);
+  transition: background 0.5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  font-weight: 600;
+}
+
+textarea, input[type="text"] {
+  padding: 4px;
+  border-radius: 4px;
+  border: solid 1px lightgray;
+  font-family: inherit;
+  margin: 4px 0;
+}
+
+textarea {
+  display: block;
+  max-width: 99%;
+  height: 4em;
+  resize: none;
+}
+
+button {
+  margin: 4px;
+  border: solid 2px transparent;
+  border-radius: 2rem;
+  padding: 0 12px;
+  height: 1.8em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+button:focus {
+  outline: none;
+  border-color: rgb(51, 51, 51);
+}
+
+.document {
+  width: 900px;
+  max-width: 80vw;
+  margin: 1rem auto;
+  background-color: white;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  padding: 1rem 2rem;
+}
+
+.flex-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex;
+  align-items: flex-start;
+}
+
+#preview-button-container {
+  margin: 1rem;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+#preview-button {
+  background-color: rgb(218, 218, 218);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#preview-button:hover {
+  background-color: rgb(194, 194, 194);
+}
+
+.section-heading {
+  width: 100%;
+  margin: 1rem 0;
+  cursor: default;
+  font-size: 1.25rem;
+}
+
+.cv-item {
+  width: 100%;
+  padding: 0.3rem 0;
+}
+
+.being-edited {
+  font-family: 'Oxygen Mono', monospace;
+}
+
+.editable-item {
+  border-radius: 4px;
+}
+
+.editable-item:hover {
+  background-color: rgba(209, 229, 231, 0.795);
+  cursor: pointer;
+}
+
+.add-button {
+  display: var(--button-display);
+  background-color: rgb(215, 234, 235);
+}
+
+.add-button:hover {
+  background-color: rgb(196, 214, 219);
+}
+
+.done-editing-button {
+  background-color: rgb(215, 235, 215);
+}
+
+.done-editing-button:hover {
+  background-color: rgb(196, 219, 196);
+}
+
+.remove-item-button {
+  background-color: rgb(248, 214, 214);
+}
+
+.remove-item-button:hover {
+  background-color: rgb(228, 192, 192);
+}
+
+.cv-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+}
+
+.add-link-button {
+  display: var(--button-display);
+  margin-left: 1rem;
+  background-color: rgb(218, 235, 215);
+}
+
+.add-link-button:hover {
+  background-color: rgb(199, 219, 196);
+}
+
+.edit-link-button {
+  display: var(--button-display);
+}
+
+.flex-space-between {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cv-item-description {
+  font-style: italic;
+}
+
+.horizontal-break {
+  border-top: solid 1px rgb(177, 177, 177);
 }
